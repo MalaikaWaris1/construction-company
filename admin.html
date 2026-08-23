@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildCraft - Premium Admin Workspace</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="auth-container" class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>BuildCraft <span>Control Panel</span></h2>
+                <p id="auth-subtitle">Secure Access Management Portal</p>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <div class="form-group">
+                    <label>Admin Username</label>
+                    <input type="text" id="login-username" placeholder="Enter administrative identifier" required>
+                </div>
+                <div class="form-group">
+                    <label>Secret Password</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary w-100">Unlock Workspace →</button>
+                <p class="auth-toggle-text">New system administrator? <a href="#" id="go-to-register">Register
+                        Account</a></p>
+            </form>
+
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label>Create Admin Username</label>
+                    <input type="text" id="register-username" placeholder="Choose unique identifier" required>
+                </div>
+                <div class="form-group">
+                    <label>Set Secure Password</label>
+                    <input type="password" id="register-password" placeholder="Minimum 8 characters" required>
+                </div>
+                <button type="submit" class="btn-primary w-100">Initialize Identity ✓</button>
+                <p class="auth-toggle-text">Already registered? <a href="#" id="go-to-login">Access Portal Sign-In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="admin-dashboard" class="dashboard-wrapper hidden">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>BuildCraft <span>Console</span></h2>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item active" data-target="projects-view">🏗️ Manage Projects</a>
+                <a href="#" class="menu-item" data-target="team-view">👥 Executive Team</a>
+                <a href="#" class="menu-item" data-target="inquiries-view">✉️ Client Inquiries</a>
+                <a href="#" class="menu-item" data-target="subscribers-view">📧 Newsletter List</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="portal-logout-btn" class="btn-logout">Exit Session</button>
+            </div>
+        </aside>
+       
+        <main class="main-content">
+            <header class="workspace-header">
+                <div>
+                    <h1 id="current-view-title">Projects Management Board</h1>
+                    <p class="text-muted">Real-time database sync status active</p>
+                </div>
+            </header>
+             <section id="subscribers-view" class="dashboard-section">
+            <div class="section-actions-bar">
+                <h3>Subscribed Email Directory</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="premium-table">
+                    <thead>
+                        <tr>
+                            <th>Email Address</th>
+                            <th>Status</th>
+                            <th>Subscribed Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="subscribers-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+            <section id="projects-view" class="dashboard-section active">
+                <div class="section-actions-bar">
+                    <h3>Synchronized Case Studies</h3>
+                    <button class="btn-primary open-modal-btn" data-modal="project-modal">+ Create New Project</button>
+                </div>
+                <div class="data-grid" id="projects-data-container">
+                </div>
+            </section>
+
+            <section id="team-view" class="dashboard-section">
+                <div class="section-actions-bar">
+                    <h3>Active Architects & Personnel</h3>
+                    <button class="btn-primary open-modal-btn" data-modal="team-modal">+ Add Member</button>
+                </div>
+                <div class="data-grid" id="team-data-container">
+                </div>
+            </section>
+
+            <section id="inquiries-view" class="dashboard-section">
+                <div class="section-actions-bar">
+                    <h3>Incoming Business Proposals</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="premium-table">
+                        <thead>
+                            <tr>
+                                <th>Prospect Client</th>
+                                <th>Contact Access</th>
+                                <th>Inquiry Classification</th>
+                                <th>Project Target Specifications</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inquiries-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="project-modal-title">Create Database Project Entry</h3>
+                <button class="close-modal-btn">&times;</button>
+            </div>
+            <form id="project-crud-form">
+                <input type="hidden" id="project-edit-id">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Category Heading</label>
+                        <input type="text" id="proj-category" placeholder="COMMERCIAL PLAZA" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Title Name</label>
+                        <input type="text" id="proj-title" placeholder="The Horizon Corporate Tower" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Completion Year</label>
+                        <input type="text" id="proj-year" placeholder="2025" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Physical Scale Dimension</label>
+                        <input type="text" id="proj-scale" placeholder="120,000 Sq. Ft." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Site Geographic Location</label>
+                    <input type="text" id="proj-location" placeholder="DHA Phase 6, Karachi" required>
+                </div>
+                <div class="form-group">
+                    <label>Tags Framework (Comma Separated)</label>
+                    <input type="text" id="proj-tags" placeholder="BIM Modeling, AutoCAD, RCC Frame">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Case Study Resource URL</label>
+                        <input type="url" id="proj-casestudy" placeholder="https://external.link/case">
+                    </div>
+                    <div class="form-group">
+                        <label>Blueprint Document PDF URL</label>
+                        <input type="url" id="proj-blueprint" placeholder="https://external.link/doc.pdf">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Project Description Content</label>
+                    <textarea id="proj-desc" rows="3"
+                        placeholder="Describe the engineering scope and structural process..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Media Cover Image</label>
+                    <input type="file" id="proj-media-file" accept="image/*">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary close-modal-btn">Discard Changes</button>
+                    <button type="submit" class="btn-primary">Save Data Package</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="team-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="team-modal-title">Add Executive Personnel Record</h3>
+                <button class="close-modal-btn">&times;</button>
+            </div>
+            <form id="team-crud-form">
+                <input type="hidden" id="team-edit-id">
+                <div class="form-group">
+                    <label>Full Professional Name</label>
+                    <input type="text" id="team-name" placeholder="Elena Rostova" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Designated Operations Role</label>
+                        <input type="text" id="team-role" placeholder="OPERATIONS DIRECTOR" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tenure Seniority Experience</label>
+                        <input type="text" id="team-experience" placeholder="15 Yrs Exp" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Expertise Verification Tags (Comma Separated)</label>
+                    <input type="text" id="team-tags" placeholder="Safety Audits, PMI Certified">
+                </div>
+                <div class="form-group">
+                    <label>Short Bio/Description</label>
+                    <textarea id="team-desc" rows="3"
+                        placeholder="Summarize professional operational oversight fields..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Personnel Square Profile Picture</label>
+                    <input type="file" id="team-media-file" accept="image/*">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary close-modal-btn">Cancel</button>
+                    <button type="submit" class="btn-primary">Commit Member Data</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>

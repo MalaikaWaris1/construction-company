@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildCraft - Construction Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-HhqaObe_2R5iBHqrc-faVxSjUlJe1WN8u40x9yLTZJ35ncFLk-ZFCq0&s=10"
+                    alt="logo">
+            </div>
+
+            <!-- 🍔 Hamburger Menu Button (ID match with JS) -->
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Dropdown Links -->
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li class="mobile-only-cta">
+                    <a href="#contact" class="cta-btn-nav">Get A Quote &rarr;</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Only CTA Button -->
+        <a href="#contact" class="cta-btn-nav desktop-only-cta">Get A Quote <span class="arrow">&rarr;</span></a>
+    </header>
+
+    <main id="home" class="hero-section reveal">
+
+        <div class="hero-content">
+            <span class="sub-heading">SMART INFRASTRUCTURE</span>
+            <h1>We're The Best Leading Construction Company</h1>
+            <p>We have been operating for over a decade providing top-notch engineering, modern architectural designs,
+                and sustainable building solutions tailored to your needs.</p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Read More</a>
+                <div class="phone-contact">
+                    <div class="phone-icon">📞</div>
+                    <div>
+                        <small>NEED HELP?</small>
+                        <p>(208) 555-0112</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="wave-bg"></div>
+            <img id="slider-img"
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+                alt="Construction site" class="fade-in">
+
+            <div class="badge-award">
+                <div class="badge-text">10+ YEARS EXPERIENCE</div>
+            </div>
+        </div>
+    </main>
+
+    <section class="rated-projects-section">
+        <div class="marquee-container">
+
+            <div class="rated-header">
+                <span class="rated-tag">Testimonials</span>
+                <h2>Top Rated Architectural Wonders</h2>
+                <p>Our track record is validated by our clients. Explore some of our 5-star completed structures.</p>
+            </div>
+
+            <div class="marquee-view-portal">
+                <div class="marquee-track">
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="DHA Villa">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Residential Estate</span>
+                            <h3 class="project-title">The Skyline Villa</h3>
+                            <p class="client-review">"Novus built our dream home flawlessly. Outstanding engineering and
+                                professional team."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Majid Khan</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="Horizon Tower">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Commercial Plaza</span>
+                            <h3 class="project-title">Horizon Tower</h3>
+                            <p class="client-review">"The seismic design calculations and modern facade work were
+                                exactly what our plaza needed."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Operations Director</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="Oakwood Villas">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Smart Housing</span>
+                            <h3 class="project-title">Oakwood Villas</h3>
+                            <p class="client-review">"Integrated solar grid and greywater recycling are future-ready
+                                features they flawlessly executed."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Elena Rostova</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="The Forum Suite">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Corporate Office</span>
+                            <h3 class="project-title">The Forum Suite</h3>
+                            <p class="client-review">"From blueprints to final handover, the process was transparent,
+                                fast, and safe."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Principal Architect</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="DHA Villa">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Residential Estate</span>
+                            <h3 class="project-title">The Skyline Villa</h3>
+                            <p class="client-review">"Novus built our dream home flawlessly. Outstanding engineering and
+                                professional team."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Majid Khan</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="Horizon Tower">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Commercial Plaza</span>
+                            <h3 class="project-title">Horizon Tower</h3>
+                            <p class="client-review">"The seismic design calculations and modern facade work were
+                                exactly what our plaza needed."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Operations Director</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="Oakwood Villas">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Smart Housing</span>
+                            <h3 class="project-title">Oakwood Villas</h3>
+                            <p class="client-review">"Integrated solar grid and greywater recycling are future-ready
+                                features they flawlessly executed."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Elena Rostova</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-rating-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=350&h=250&q=80"
+                                alt="The Forum Suite">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Corporate Office</span>
+                            <h3 class="project-title">The Forum Suite</h3>
+                            <p class="client-review">"From blueprints to final handover, the process was transparent,
+                                fast, and safe."</p>
+                            <div class="rating-footer">
+                                <span class="client-name">Principal Architect</span>
+                                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about-section reveal">
+        <div class="about-container">
+
+            <div class="about-header-centered">
+                <span class="section-tag">About Us</span>
+                <h2>About BuildCraft</h2>
+                <p class="section-subtitle">We are a premier construction and civil engineering firm dedicated to
+                    building sustainable, safe, and modern infrastructures.</p>
+            </div>
+
+            <div class="about-curved-box">
+
+                <div class="box-header-row">
+                    <div class="box-header-left">
+                        <span class="box-tag">Why Choose Us</span>
+                        <h3>Your Vision, <br>Our Construction</h3>
+                    </div>
+                    <div class="box-header-right">
+                        <p>We combine structural excellence with cutting-edge engineering technology to bring your
+                            architectural dreams to life safely and sustainably. Your trust is our strongest foundation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-cards-grid">
+
+                    <div class="about-card light-card">
+                        <div class="card-header">
+                            <h4>Structure Excellence</h4>
+                            <span class="card-arrow">↗</span>
+                        </div>
+                        <p>Using premium-grade materials and strict engineering standards to ensure unmatched
+                            durability.</p>
+                        <div class="card-image-wrapper">
+                            <img src="https://media.istockphoto.com/id/517374252/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=mC7RfqWnNBEkmfbem-cHjd7O10XbiZ0SCfJuIZkmfKg="
+                                alt="Structural Engineering" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="about-card dark-card">
+                        <div class="card-header">
+                            <h4>Expert Engineering</h4>
+                            <span class="card-arrow">↗</span>
+                        </div>
+                        <p>Our certified team delivers high-precision drafting, blueprint sketches, and seamless
+                            execution.</p>
+                        <div class="card-image-wrapper">
+                            <img src="https://img.magnific.com/free-vector/modern-skyscrapers-building-against-sky-with-reflection_1017-58551.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt="Certified Civil Engineers" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="about-card light-card">
+                        <div class="card-header">
+                            <h4>Sustainable Design</h4>
+                            <span class="card-arrow">↗</span>
+                        </div>
+                        <p>Integrating eco-friendly building materials and green tech to build responsibly for tomorrow.
+                        </p>
+                        <div class="card-image-wrapper">
+                            <img src="https://www.shutterstock.com/image-photo/new-modern-block-flats-green-260nw-2461488711.jpg"
+                                alt="Eco Friendly Design" class="card-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section reveal">
+        <div class="services-container">
+
+            <!-- Section Header -->
+            <div class="services-header">
+                <span class="services-tag">Our Services</span>
+                <h2>What We Do Best</h2>
+                <p>We deliver comprehensive construction, architectural planning, and turnkey interior solutions
+                    engineered to last generations.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+
+                <!-- 📐 SERVICE CARD 1: Architectural & BIM Design -->
+                <div class="service-card">
+                    <!-- Top Accent Line for Premium UI Hover Effect -->
+                    <div class="card-accent-line"></div>
+
+                    <div class="service-icon-wrapper">
+                        <!-- Custom Blueprint/Drafting SVG Icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                    </div>
+
+                    <h3 class="service-title">Architectural & BIM Design</h3>
+                    <p class="service-desc">Creating visually stunning, structurally sound, and space-efficient 3D
+                        models before laying down the first brick.</p>
+
+                    <!-- Service Specific Micro-deliverables -->
+                    <ul class="service-bullets">
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>3D Architectural Visualization</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Building Information Modeling (BIM)</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Structural Analysis & Blueprints</span>
+                        </li>
+                    </ul>
+
+                    <a href="#combinedForm" class="service-action-btn">
+                        <span>Learn More</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 🏗️ SERVICE CARD 2: General Civil Contracting -->
+                <div class="service-card">
+                    <div class="card-accent-line"></div>
+
+                    <div class="service-icon-wrapper">
+                        <!-- Custom Construction Crane/Structure SVG Icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M21 16H3M21 12H3M21 8H3M10 21V3M14 21V3" />
+                        </svg>
+                    </div>
+
+                    <h3 class="service-title">General Contracting</h3>
+                    <p class="service-desc">Full-scale civil engineering, heavy infrastructure execution, and project
+                        management under tight safety protocols.</p>
+
+                    <ul class="service-bullets">
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Commercial & Residential builds</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Site Excavation & Foundation</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Quality Supervision & Audits</span>
+                        </li>
+                    </ul>
+
+                    <a href="#combinedForm" class="service-action-btn">
+                        <span>Learn More</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 🛋️ SERVICE CARD 3: Interior Architecture & Fit-Outs -->
+                <div class="service-card">
+                    <div class="card-accent-line"></div>
+
+                    <div class="service-icon-wrapper">
+                        <!-- Custom Interior/Layout SVG Icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+
+                    <h3 class="service-title">Interior & Fit-Outs</h3>
+                    <p class="service-desc">Premium customized woodwork, lighting planning, and bespoke ceiling designs
+                        that transform empty structures into luxury spaces.</p>
+
+                    <ul class="service-bullets">
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Custom Modular Woodwork & Kitchens</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Luxury False Ceiling & Lighting</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Corporate Office Partitioning</span>
+                        </li>
+                    </ul>
+
+                    <a href="#combinedForm" class="service-action-btn">
+                        <span>Learn More</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="expertise-section reveal">
+        <div class="expertise-container">
+
+            <div class="expertise-header">
+                <div class="header-left">
+                    <span class="exp-tag">EXPERTISE</span>
+                    <h2>Engineering Expertise <br>You Can Build On</h2>
+                </div>
+                <div class="header-right">
+                    <p>We combine cutting-edge structural engineering with top-tier project management. Our metrics
+                        aren't just numbers; they represent the trust and safety we build into every single project.</p>
+
+                    <div class="cta-actions-row">
+                        <a href="#contact" class="btn-dark-pill">Learn More ↗</a>
+                        <button class="btn-play-circle" aria-label="Watch Video">
+                            <span class="play-icon">▶</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expertise-cards-row">
+
+                <div class="exp-card img-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRM2KOkTX92h53GqsXXsF1bmtU008nKJYXu1PWPshDN6I1GOqNb1GZUNv&s=10"
+                        alt="Construction Site Planning" class="exp-bg-img">
+                </div>
+
+                <div class="exp-card tint-card">
+                    <h3 class="stat-number"><span class="counter" data-target="14">0</span>+</h3>
+                    <span class="stat-title">Years Experience</span>
+                    <p>Over a decade of structural integrity and design innovation.</p>
+                </div>
+
+                <div class="exp-card white-card">
+                    <div class="card-top-icon">
+                        <span class="icon-badge"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-HhqaObe_2R5iBHqrc-faVxSjUlJe1WN8u40x9yLTZJ35ncFLk-ZFCq0&s=10"
+                                alt="logo"> </span>
+                    </div>
+                    <h3 class="stat-number"><span class="counter" data-target="3200">0</span>+</h3>
+                    <span class="stat-title">Projects Completed</span>
+                    <p>Successfully delivered residential & commercial hubs.</p>
+                </div>
+
+                <div class="exp-card tint-card">
+                    <h3 class="stat-number"><span class="counter" data-target="25">0</span>+</h3>
+                    <span class="stat-title">Expert Engineers</span>
+                    <p>Highly qualified structural designers and project managers.</p>
+                </div>
+
+                <div class="exp-card dark-gradient-card">
+                    <div class="avatar-group">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Team Member" class="avatar">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Team Member" class="avatar">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Team Member" class="avatar">
+                    </div>
+                    <h4>Build With Us</h4>
+                    <p>Start your dream infrastructure journey today with our team.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section reveal">
+        <div class="projects-container">
+
+            <div class="projects-header">
+                <span class="projects-tag">Our Portfolio</span>
+                <h2>Our Landmark Projects</h2>
+                <p>Explore our successfully delivered residential, commercial, and infrastructural developments built
+                    with premium safety standards.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-slideshow">
+                        <div class="slideshow-track">
+                            <img class="slide-img active"
+                                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
+                                alt="Plaza Front View">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
+                                alt="Foundation Work">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+                                alt="Interior Architecture">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80"
+                                alt="Glass Facade Installation">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80"
+                                alt="Final Handover">
+                        </div>
+                        <div class="slideshow-indicators"></div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span class="project-category">Commercial Plaza</span>
+                            <span class="project-date">Completed: 2025</span>
+                        </div>
+
+                        <h3 class="project-title">The Horizon Corporate Tower</h3>
+                        <p class="project-desc">A state-of-the-art 15-story corporate office complex featuring premium
+                            double-glazed thermal glass facades, modern seismic-resistant design, and integrated smart
+                            building automation.</p>
+
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Location:</span>
+                                <span class="spec-value">DHA Phase 6, Karachi</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Scale:</span>
+                                <span class="spec-value">120,000 Sq. Ft.</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span class="tech-tag">BIM Modeling</span>
+                            <span class="tech-tag">AutoCAD</span>
+                            <span class="tech-tag">RCC Frame</span>
+                            <span class="tech-tag">Smart HVAC</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#" class="proj-action-btn live-demo" target="_blank">
+                                <span>View Case Study</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                            </a>
+                            <a href="#" class="proj-action-btn repo-link" target="_blank">
+                                <span>Get Blueprint PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-slideshow">
+                        <div class="slideshow-track">
+                            <img class="slide-img active"
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
+                                alt="Villa Elevation">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
+                                alt="Lawn Area">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80"
+                                alt="Living Room Finish">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80"
+                                alt="Smart Kitchen">
+                            <img class="slide-img"
+                                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
+                                alt="Completed Night View">
+                        </div>
+                        <div class="slideshow-indicators"></div>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span class="project-category">Residential Estate</span>
+                            <span class="project-date">Status: Ongoing</span>
+                        </div>
+
+                        <h3 class="project-title">Oakwood Smart Villas</h3>
+                        <p class="project-desc">A premium luxury housing project designed with sustainable local bricks,
+                            integrated solar-grid power networks, and modern greywater recycling infrastructure.</p>
+
+                        <div class="project-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Location:</span>
+                                <span class="spec-value">Bahria Town, Islamabad</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Scale:</span>
+                                <span class="spec-value">4.5 Kanals</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span class="tech-tag">Revit 3D</span>
+                            <span class="tech-tag">Solar Grid</span>
+                            <span class="tech-tag">Eco Bricks</span>
+                            <span class="tech-tag">Water Recycle</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#" class="proj-action-btn live-demo" target="_blank">
+                                <span>View Gallery</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                            </a>
+                            <a href="#" class="proj-action-btn repo-link" target="_blank">
+                                <span>Brochure PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="team-container">
+
+            <div class="team-header">
+                <span class="team-tag">Our Experts</span>
+                <h2>The Minds Behind the Concrete</h2>
+                <p>Our certified team of civil engineers and architects work together to turn complex blueprints into
+                    safe realities.</p>
+            </div>
+
+            <div class="carousel-container">
+                <button class="nav-btn prev-btn" aria-label="Previous Slide">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                    </svg>
+                </button>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+
+                        <div class="carousel-slide">
+                            <div class="expert-card">
+                                <div class="img-container">
+                                    <span class="exp-badge">12 Yrs Exp</span>
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=256&h=256"
+                                        alt="Sarah Connor">
+                                </div>
+                                <span class="role">Principal Architect</span>
+                                <h3>Sarah Connor</h3>
+                                <div class="tags">
+                                    <span class="tag">BIM Design</span>
+                                    <span class="tag">Eco Buildings</span>
+                                </div>
+                                <p>Specializes in sustainable blueprint design and modern urban community planning.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="expert-card">
+                                <div class="img-container">
+                                    <span class="exp-badge">8 Yrs Exp</span>
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=256&h=256"
+                                        alt="Alex Mercer">
+                                </div>
+                                <span class="role">Lead Structural Engineer</span>
+                                <h3>Alex Mercer</h3>
+                                <div class="tags">
+                                    <span class="tag">Steel Framings</span>
+                                    <span class="tag">AutoCAD</span>
+                                </div>
+                                <p>Expert in high-rise foundation safety, structural seismic calculation, and steel
+                                    integrity.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="expert-card">
+                                <div class="img-container">
+                                    <span class="exp-badge">15 Yrs Exp</span>
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&h=256"
+                                        alt="Elena Rostova">
+                                </div>
+                                <span class="role">Operations Director</span>
+                                <h3>Elena Rostova</h3>
+                                <div class="tags">
+                                    <span class="tag">Safety Audits</span>
+                                    <span class="tag">PMI Certified</span>
+                                </div>
+                                <p>Oversees site operations, quality assurance, regulatory compliance, and timeline
+                                    management.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="nav-btn next-btn" aria-label="Next Slide">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+                    </svg>
+                </button>
+
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="quote-contact-section reveal">
+        <div class="quote-container">
+
+            <div class="quote-info-panel">
+                <div class="quote-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern Architecture Construction" class="info-img">
+                </div>
+
+                <div class="info-text-content">
+                    <span class="info-tag">Get a Quote</span>
+                    <h2>Build Your Future With Us.</h2>
+                    <p class="info-subtext">Tell us about your project, and we'll provide a detailed construction
+                        estimate.</p>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                                    <path d="M12 11h.01" />
+                                    <path d="M12 16h.01" />
+                                    <path d="M8 11h.01" />
+                                    <path d="M8 16h.01" />
+                                    <path d="M16 11h.01" />
+                                    <path d="M16 16h.01" />
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h4>Email Support</h4>
+                                <p>Our estimating team responds promptly.</p>
+                                <a href="mailto:quotes@novusreb.com" class="direct-link">quotes@novusreb.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h4>Visit Our Office</h4>
+                                <p>Discuss your blueprints in person.</p>
+                                <address>221b Elementary Avenue, Karachi</address>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h4>Call Our Team</h4>
+                                <p>Get immediate estimation advice.</p>
+                                <a href="tel:+12344567789" class="direct-link">(+92) 234-4567-789</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <div class="form-card">
+                    <h3>Request a Quote or Contact Us</h3>
+                    <p class="form-subtitle">For a personalized project estimation, please provide as much detail as
+                        possible.</p>
+
+                    <form id="combinedForm" action="/api/quote-contact" method="POST">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First Name</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                            <circle cx="12" cy="7" r="4" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" id="first_name" name="first_name"
+                                        placeholder="Enter your first name..." required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last Name</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                            <circle cx="12" cy="7" r="4" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" id="last_name" name="last_name"
+                                        placeholder="Enter your last name..." required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrapper">
+                                <span class="input-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                </span>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address..."
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrapper phone-wrapper">
+                                <div class="country-dropdown" id="countryDropdown">
+                                    <div class="selected-country">
+                                        <img src="https://flagcdn.com/w20/pk.png" alt="Pakistan" class="flag-img"
+                                            id="currentFlag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6" />
+                                        </svg>
+                                    </div>
+                                    <div class="country-list hidden" id="countryList">
+                                        <div class="country-item" data-code="+92" data-flag="pk">
+                                            <img src="https://flagcdn.com/w20/pk.png" alt="Pakistan"> Pakistan (+92)
+                                        </div>
+                                        <div class="country-item" data-code="+1" data-flag="us">
+                                            <img src="https://flagcdn.com/w20/us.png" alt="USA"> USA (+1)
+                                        </div>
+                                        <div class="country-item" data-code="+44" data-flag="gb">
+                                            <img src="https://flagcdn.com/w20/gb.png" alt="UK"> UK (+44)
+                                        </div>
+                                        <div class="country-item" data-code="+971" data-flag="ae">
+                                            <img src="https://flagcdn.com/w20/ae.png" alt="UAE"> UAE (+971)
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="country_code" id="countryCodeInput" value="+92">
+                                <input type="tel" id="phone" name="phone" placeholder="3XX-XXXXXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry_type">Inquiry Type</label>
+                            <div class="input-wrapper">
+                                <select id="inquiry_type" name="inquiry_type" required>
+                                    <option value="" disabled selected>Choose Inquiry Type...</option>
+                                    <option value="request_quote">Request a Quote</option>
+                                    <option value="general_inquiry">General Inquiry</option>
+                                    <option value="partnership">Partnership</option>
+                                </select>
+                                <span class="input-icon dropdown-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label-row">
+                                <label for="message">Project Details or Question</label>
+                                <span class="char-count" id="charCount">0/300</span>
+                            </div>
+                            <textarea id="message" name="message" rows="4" maxlength="300"
+                                placeholder="Enter your main project description or message here..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span>Submit Request</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-column brand-column">
+                <div class="footer-logo">
+                    <span class="logo-icon"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-HhqaObe_2R5iBHqrc-faVxSjUlJe1WN8u40x9yLTZJ35ncFLk-ZFCq0&s=10"
+                            alt=""> </span> <strong>BuildCraft</strong>
+                </div>
+                <p class="brand-tagline">Building dreams with concrete foundation and modern architectural designs.</p>
+
+                <div class="newsletter-box">
+                    <h4>Stay Informed with Our <span>Newsletter</span></h4>
+                    <p>Get updates on our latest projects and building offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" id="newsletter-email-input" placeholder="Enter your email" required>
+                        <button type="submit">Join Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="services.html">Residential Construction</a></li>
+                    <li><a href="services.html">Commercial Buildings</a></li>
+                    <li><a href="services.html">Smart Infrastructure</a></li>
+                    <li><a href="services.html">Interior & Architecture</a></li>
+                    <li><a href="services.html">Renovation Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Company</a></li>
+                    <li><a href="projects.html">Our Portfolio</a></li>
+                    <li><a href="careers.html">Join Our Team</a></li>
+                    <li><a href="contact.html">Request A Quote</a></li>
+                    <li><a href="blog.html">Latest News</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul class="contact-info">
+                    <li>📍 123 Building Avenue, Suite 500</li>
+                    <li>📞 (208) 555-0112 (Mon-Fri)</li>
+                    <li>✉️ info@buildcraft.com</li>
+                    <li>🕒 Hours: 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-container">
+                <p>Copyright &copy; 2026 BuildCraft Inc. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="contact.html">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
