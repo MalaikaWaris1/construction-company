@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     // --- REAL BACKEND API CONFIGURATION ---
-    const API_BASE_URL = "http://localhost:8000/api";
+   const API_BASE_URL = window.location.hostname === "localhost" 
+  ? "http://localhost:8000/api" 
+  : "https://backend-construction-94n3.onrender.com/api";
     
     // Arrays backend se live sync honge
     let projectsArray = [];
